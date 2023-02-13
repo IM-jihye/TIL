@@ -13,3 +13,8 @@
 #             rank += 1
 
 #     print(rank,end= ' ')
+
+a,b = list(map(int,input().split()))
+for i in range(2):
+
+    print(a[::-1])
