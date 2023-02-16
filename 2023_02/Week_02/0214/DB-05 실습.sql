@@ -28,7 +28,7 @@ DROP TABLE posts;
 
 -- 문제 6
 -- 테이블 posts 가 존재하지 않으면(NOT EXISTS) 테이블 posts 를 생성하시오.
-CREATE table posts(
+CREATE table if not exists posts(
 postId	int auto_increment,
 title	varchar(50) not null,
 content	text not null,
@@ -38,7 +38,7 @@ PRIMARY KEY(postId));
 
 -- 문제 7
 -- 테이블 posts 가 존재하면 (EXISTS) 테이블 posts 를 삭제하시오.
-DROP TABLE posts;
+DROP TABLE IF EXISTS posts;
 
 
 

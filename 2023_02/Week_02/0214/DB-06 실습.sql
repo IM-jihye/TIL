@@ -39,12 +39,12 @@ where userId= 2;
 -- 테이블 users 에서 country 필드가 NULL 인 모드 레코드의 country 필드 값을 Korea 로 변경하시오.
 update user 
 set country = 'Korea'
-where country = NULL;
+where country is NULL;
 
 -- 문제 6
 -- 테이블 users 에서 first_name 필드가 Beemo 인 레코드를 삭제하시오.
 DELETE from users
-where first_name = Beemo;
+where first_name = 'Beemo';
 
 -- 문제 7
 -- 테이블 users 에서 first_name 필드가 Kwangsoo, last_name 필드가 Lee 인 레코드를 삭제하시오.
